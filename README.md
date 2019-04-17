@@ -1,5 +1,3 @@
-[↑](https://dalrym.pl/projects/index.html) &nbsp; &nbsp; [⌂](https://dalrym.pl/index.html)
-
 This page documents two separate but complementary pieces of software: morse-server and morse-client. The two of them allow for users to chat with real time audio [morse code](https://en.wikipedia.org/wiki/Morse_code).
 
 ## Requirements and installation
@@ -30,7 +28,7 @@ Rules about username length and maximum connections are determined serverside. I
 
 ## Screenshot
 
-[![two clients chatting](https://dalrym.pl/media/img/morse.gif)](https://dalrym.pl/media/img/morse.gif)
+[![two clients chatting](https://raw.githubusercontent.com/jimd1989/morse-chat/master/morse.gif)](https://raw.githubusercontent.com/jimd1989/morse-chat/master/morse.gif)
 
 ## Issues
 
