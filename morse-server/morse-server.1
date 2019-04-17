@@ -1,0 +1,13 @@
+.Dd $Mdocdate$
+.Dt morse-server 1
+.Os
+.Sh NAME
+.Nm morse-server
+.Nd serves audio chat with morse code
+.Sh SYNOPSIS
+.Nm morse-server
+.Op url:port max-users
+.Sh DESCRIPTION
+The morse-server facilitates communication between morse-client sessions. It does not generate any audio itself; it only routes messages from one client to another. It is invoked with two parameters: the url:port upon which to listen for connections, and an integer value between 1 and 254 that represents the maximum amount of concurrent sessions. After successful startup it will log messages to stderr.
+.Sh AUTHORS
+Written by Jim Dalrymple. https://dalrym.pl

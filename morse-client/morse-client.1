@@ -1,0 +1,51 @@
+.Dd $Mdocdate$
+.Dt morse-client 1
+.Os
+.Sh NAME
+.Nm morse-client
+.Nd audio chat with morse code
+.Sh SYNOPSIS
+.Nm morse-client 
+.Op username url:port
+.Sh DESCRIPTION
+The morse-client connects to an instance of the morse-server and allows the user to chat with others through morse code. It runs in a curses window that responds to a few basic key presses.
+.Bl -tag -width Ds
+.It mouse click
+Make sound. Release to go silent again.
+.El
+.Bl -tag -width Ds
+.It o
+Locks user's sound on.
+.El
+.Bl -tag -width Ds
+.It p
+Turns user's currently playing sound off.
+.El
+.Bl -tag -width Ds
+.It e
+Edit the user's pitch in hz.
+.El
+.Bl -tag -width Ds
+.It v
+Edit the local master volume.
+.El
+.Bl -tag -width Ds
+.It n
+List the names and pitch of all users in the chat.
+.El
+.Bl -tag -width Ds
+.It q
+Quit the chat. This is the only way to exit. ^c or ^d will have no effect.
+.El
+.Bl -tag -width Ds
+.It h
+Display the help message.
+.El
+.Bl -tag -width Ds
+.It enter
+Display a blank line to break up messages.
+.El
+.Sh AUTHORS
+Written by Jim Dalrymple. https://dalrym.pl
+.Sh CAVEATS
+Scrollback is not implemented due to the audio-centric nature of the chat. All relevant information can be accessed at any time by pressing the 'n' or 'h' key. Click resolution is tight, but may still be less than ideal. This is likely due to the way audio buffers are written.
